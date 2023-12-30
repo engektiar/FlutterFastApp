@@ -1,4 +1,3 @@
- 
  import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -10,16 +9,16 @@ void main(){
  
    @override
    Widget build(BuildContext context) {
-     return MaterialApp (
+     return MaterialApp(
        debugShowCheckedModeBanner: false,
-       home:Scaffold(
-         body:Column(
-           mainAxisAlignment:MainAxisAlignment.center ,
-           children:[
-             Text("hello flutter devloper")
-           ]
-         )
-       )
+       home: Scaffold(
+         body: Column(
+           mainAxisAlignment: MainAxisAlignment.center,
+           children: [
+             Text("Hi  This is Fullter developer thank you ")
+           ],
+         ),
+       ),
      );
    }
  }
