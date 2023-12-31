@@ -14,6 +14,7 @@ void main(){
          appBar: AppBar(
            title: Text("Home"),
            centerTitle:true ,
+           leading: Icon(Icons.message),
            actions: [
              IconButton(
                icon: Icon(Icons.add_a_photo),
@@ -23,6 +24,9 @@ void main(){
              )
            ],
 
+         ),
+         body: Center(
+           child: Text("Hello Flutter Developer",style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold),),
          ),
        ),
      );
