@@ -10,7 +10,8 @@ void main(){
    Widget build(BuildContext context) {
      return MaterialApp(
        debugShowCheckedModeBanner: false,
-       home: Scaffold(
+       home: SafeArea(
+         child: Scaffold(
          appBar: AppBar(
            title: Text("Home"),
            centerTitle:true ,
@@ -25,10 +26,13 @@ void main(){
            ],
 
          ),
-         body: Center(
-           child: Text("Hello Flutter Developer",style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold),),
-         ),
+        body: Container(
+          width: 300,
+          height: 400,
+            color: Colors.blue,
+        ),
        ),
+     ),
      );
    }
  }
