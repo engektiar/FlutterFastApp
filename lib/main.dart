@@ -14,30 +14,40 @@ void main(){
        home: SafeArea(
          child: Scaffold(
            appBar: AppBar(title: Text("Home Page"),),
-           body: SingleChildScrollView(
-             scrollDirection: Axis.horizontal,
-             child: Row(
+           body: ListView (
+
                children: [
                  Container(
                    width: 200,
                    height: 200,
                    color: Colors.green,
                  ),
-                 SizedBox(width: 10,),
+                 SizedBox(height: 10,),
                  Container(
                    width: 200,
                    height: 200,
                    color: Colors.cyan,
                  ),
-                 SizedBox(width: 10,),
+                 SizedBox(height: 10,),
                  Container(
                    width: 200,
                    height: 200,
                    color: Colors.green,
+                 ),SizedBox(height: 10,),
+                 Container(
+                   width: 200,
+                   height: 200,
+                   color: Colors.yellow,
+                 ),
+                 SizedBox(height: 10,),
+                 Container(
+                   width: 200,
+                   height: 200,
+                   color: Colors.red,
                  )
                ],
              ),
-           ),
+
          ),
        ),
      );
