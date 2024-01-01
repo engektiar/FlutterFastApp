@@ -11,43 +11,29 @@ void main(){
    Widget build(BuildContext context) {
      return MaterialApp(
        debugShowCheckedModeBanner: false,
-       home: SafeArea(
-         child: Scaffold(
-           appBar: AppBar(title: Text("Home Page"),),
-           body: ListView (
-
-               children: [
-                 Container(
-                   width: 200,
-                   height: 200,
-                   color: Colors.green,
-                 ),
-                 SizedBox(height: 10,),
-                 Container(
-                   width: 200,
-                   height: 200,
-                   color: Colors.cyan,
-                 ),
-                 SizedBox(height: 10,),
-                 Container(
-                   width: 200,
-                   height: 200,
-                   color: Colors.green,
-                 ),SizedBox(height: 10,),
-                 Container(
-                   width: 200,
-                   height: 200,
-                   color: Colors.yellow,
-                 ),
-                 SizedBox(height: 10,),
-                 Container(
-                   width: 200,
-                   height: 200,
-                   color: Colors.red,
-                 )
-               ],
+       home: Scaffold(
+         appBar:AppBar(
+           title: Text("Home Page"),
+         ),
+         body: ListView(
+           children: [
+             ListTile(
+                title: Text("this is my acad"),
+               subtitle:Text("Learing"),
+               leading: CircleAvatar(child: Icon(Icons.message),),
+               trailing: Icon(Icons.add_a_photo),
              ),
-
+             ListTile(
+               leading: CircleAvatar(child: Icon(Icons.message),),
+               title: Text("This Is Secound"),
+               trailing: Icon(Icons.add_a_photo),
+             ),
+             ListTile(
+               title: Text("This is thered"),
+               leading: CircleAvatar(child: Icon(Icons.message),),
+               trailing: Icon(Icons.add_a_photo),
+             )
+           ],
          ),
        ),
      );
