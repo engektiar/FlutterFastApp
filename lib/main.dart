@@ -12,28 +12,17 @@ void main(){
      return MaterialApp(
        debugShowCheckedModeBanner: false,
        home: Scaffold(
-         appBar:AppBar(
-           title: Text("Home Page"),
-         ),
-         body: ListView(
-           children: [
-             ListTile(
-                title: Text("this is my acad"),
-               subtitle:Text("Learing"),
-               leading: CircleAvatar(child: Icon(Icons.message),),
-               trailing: Icon(Icons.add_a_photo),
+         body: Center(
+           child: Card(
+             elevation: 20,
+             shape: RoundedRectangleBorder(
+               borderRadius: BorderRadius.all((Radius.circular(20))),
              ),
-             ListTile(
-               leading: CircleAvatar(child: Icon(Icons.message),),
-               title: Text("This Is Secound"),
-               trailing: Icon(Icons.add_a_photo),
+             child: Container(
+               width: 300,
+               height: 300,
              ),
-             ListTile(
-               title: Text("This is thered"),
-               leading: CircleAvatar(child: Icon(Icons.message),),
-               trailing: Icon(Icons.add_a_photo),
-             )
-           ],
+           ),
          ),
        ),
      );
