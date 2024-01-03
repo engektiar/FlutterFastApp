@@ -17,6 +17,7 @@ void main (){
          ),
          body: GridView.count(
            crossAxisCount: 2,
+           childAspectRatio: 1.0,
            children: [
              Container(color: Colors.red,),
              Container(color: Colors.green,),
