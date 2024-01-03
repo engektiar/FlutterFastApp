@@ -1,7 +1,7 @@
  import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-void main(){
+void main (){
   runApp(const MyApp());
  }
  class MyApp extends StatelessWidget {
@@ -10,21 +10,30 @@ void main(){
    @override
    Widget build(BuildContext context) {
      return MaterialApp(
-       debugShowCheckedModeBanner: false,
+       debugShowCheckedModeBanner:false,
        home: Scaffold(
-         body: Center(
-           child: Card(
-             elevation: 20,
-             shape: RoundedRectangleBorder(
-               borderRadius: BorderRadius.all((Radius.circular(20))),
-             ),
-             child: Container(
-               width: 300,
-               height: 300,
-             ),
-           ),
+         appBar:AppBar(
+           title: Text("Hi Ektiar"),
+         ),
+         body: GridView.count(
+           crossAxisCount: 2,
+           children: [
+             Container(color: Colors.red,),
+             Container(color: Colors.green,),
+             Container(color: Colors.yellow,),
+             Container(color: Colors.red,),
+             Container(color: Colors.black,),
+             Container(color: Colors.green,),
+             Container(color: Colors.red,),
+             Container(color: Colors.yellow,),
+             Container(color: Colors.black,),
+             Container(color: Colors.green,),
+           ],
+
          ),
        ),
+
      );
    }
  }
+
